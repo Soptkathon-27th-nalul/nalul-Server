@@ -18,4 +18,20 @@ db.Post = require('./post')(sequelize,Sequelize);
 db.Class = require('./class')(sequelize,Sequelize);
 db.Question = require('./question')(sequelize,Sequelize);
 
+/* 1 : N   User : Post */
+db.User.hasMany(db.Post, { onDelete: 'cascade' });
+db.Post.belongsTo(db.User);
+
+/* 1 : N   Class : Question */
+db.Class.hasMany(db.Question);
+db.Question.belongsTo(db.Class);
+
+/* 1 : N   Question : Post */
+db.Question.hasMany(db.Post);
+db.Post.belongsTo(db.Question);
+
+/* 1 : N   Class : Post */
+db.Class.hasMany(db.Post);
+db.Post.belongsTo(db.Class);
+
 module.exports = db;

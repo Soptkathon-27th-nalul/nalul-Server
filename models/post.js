@@ -1,27 +1,6 @@
 const {Class, User, Question} = require('../models')
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define('Post', {
-        userId : {
-            type : DataType.INTEGER,
-            reference : {
-                model : User,
-                key : 'id',
-            }
-        },
-        classId : {
-            type : DataType.INTEGER,
-            reference : {
-                model : Class,
-                key : 'id',
-            }
-        },
-        questionId : {
-            type : DataType.INTEGER,
-            reference : {
-                model : Question,
-                key : 'id',
-            }
-        },
         imageUrl: {
             type: DataTypes.STRING(100),
             allowNull: true,
@@ -36,3 +15,4 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: true,
     });
   };
+ 
