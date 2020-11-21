@@ -61,16 +61,7 @@ db.Post.belongsTo(db.Class);
 
 
 ## 📌 기능 소개
- **Service key Feature**
-  * Exploration - 쉽고, 빠르게 원하는 장소를 탐색
 
-  * Discovery - 가보고 싶은 장소를 발견할 수 있어야함
-
-  * Interaction - 상호작용, 소통할 수 있는 공간
-
-
-[예시]
- 
 - 이수진 - Write : 질문, 게시글 작성
 
 - 신지혜 - Splash : 회원가입 , Detail : 사진리스트
