@@ -56,7 +56,7 @@ db.Post.belongsTo(db.Class);
 
 ## 📋 ERD
 
-![ERD](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8bc1cb27-9572-42e8-9f3a-8d79cf54d3e0/Untitled.png)
+![image](https://user-images.githubusercontent.com/43840561/99886066-f604ab00-2c7c-11eb-96a4-f4e9f312a653.png)
 
 
 
